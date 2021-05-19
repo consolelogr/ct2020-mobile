@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, Image,SafeAreaView  } from 'react-native';
+import { StyleSheet, Text, Image,SafeAreaView,Button ,Linking } from 'react-native';
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       /> 
       <Text numberOfLines={8} style={styles.toptext}>
       
-       CODETRACKER{'\n'}-----------------------{'\n'}REACT NATIVE{'\n'}&& EXPO {'\n'}-----------------------{'\n'}
+       EIJA{'\n'}-----------------------{'\n'}REACT NATIVE{'\n'}&& EXPO {'\n'}-----------------------{'\n'}
       
       <Text style={styles.midtext} >
         Mobile edition
@@ -19,6 +19,12 @@ export default function App() {
         ver. 0.0.0.1 
       </Text>
       </Text>
+      <Button
+  onPress={()=> Linking.openURL('https://consolelogger.com')}
+  title="Learn More"
+  color="#841584"
+  accessibilityLabel="Learn more about this purple button"
+/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
